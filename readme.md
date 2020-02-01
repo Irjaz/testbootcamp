@@ -1,3 +1,10 @@
+### soal nomor 2
+
+2.html
+
+menggunakkan javascript, dengan nama xYaqinx, pass zab2III?
+
+
 ###soal nomor 3 
 
 3.html

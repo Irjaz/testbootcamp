@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Test bootcamp</h2>
+
+
+<button type="button" onclick="myFunction()">klik</button>
+
+<p> Nama result(xYAQINx) </p>
+<p id="demo"></p>
+<p> Password result(zab2III?)</p>
+<p id="demo2"></p>
+
+
+<script>
+function myFunction() {
+  var str = "xYAQINx";
+  var patt1 = /[\u0041-\u005a]/g;
+  var p = str.length - 1; 
+  var result1 = patt1.test(str) && str[0] == "x" && str[p] == "x";
+  document.getElementById("demo").innerHTML = result1; 
+
+  var pass = "zab2III?";
+  var patt2 = /[\u0030-\u0039]/;
+  var patt3 = /[\u0061-\u007a]/;
+  var patt4 = /[\u0041-\u005a]/;
+  var patt5 = /[\u003a-\u0040]/;
+  var loc   = pass.search(patt4);
+  var result2 = patt2.test(pass) && patt3.test(pass) && patt4.test(pass) && patt5.test(pass) && pass[loc] == pass[loc+1] && pass[loc+1] == pass[loc + 2];
+  document.getElementById("demo2").innerHTML = result2;
+	
+}
+</script>
+
+</body>
+</html> 
