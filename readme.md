@@ -1,3 +1,10 @@
+## soal nomor 3 
+
+3.html
+
+menggunakan javascrip untuk program logikanya
+
+
 ### Soal nomor 4
 
 4.cpp

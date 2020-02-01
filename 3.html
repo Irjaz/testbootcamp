@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Test bootcamp</h2>
+
+<p>masukan kata bukan angka</p>
+
+<input id="data">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x;
+
+
+
+teks = document.getElementById("data").value;
+
+var str1 = teks;
+var str2 = Array.from(teks);
+
+ if(isNaN(str1)){
+
+	str2.sort(function(a, b){return 0.5 - Math.random()});
+	document.getElementById("demo").innerHTML =  str2;			
+			 
+ }else{
+	document.getElementById("demo").innerHTML = (str1 + " adalah angka, masukan data dengan parameter yang benar <br/>");
+ }
+
+}
+
+</script>
+
+</body>
+</html> 
